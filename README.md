@@ -12,4 +12,4 @@
 
 ### Objective:
 
-> Create a Single Page Application (SPA) that showcases your React skills, particularly in hooks, life-cycles, state management, Webpack optimization, and web performance.
+>
