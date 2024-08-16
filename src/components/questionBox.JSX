@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import AnswerItem from "./AnswerItem.jsx/index.js";
+import AnswerItem from "./AnswerItem.jsx";
 import { playwrightQ } from "../constants/playwrightQ&A";
 import AnswerBox from "./AnswerBox";
 import QuizContext from "../context/QuizContext";
