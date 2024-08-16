@@ -12,4 +12,4 @@
 
 > Brief aims to provide a structured online question-and-answer platform, along with additional tools to measure your own or your team's knowledge.
 
-## Task Definition
+## Project Definition
