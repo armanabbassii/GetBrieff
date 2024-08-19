@@ -7,6 +7,7 @@
    - `npm install -D tailwindcss`
    - `npx tailwindcss init`
    - `npm install --save-dev @babel/preset-react`
+   - `npm install concurrently --save-dev`
 
 2. Run project in development server
    - `npm run dev`
