@@ -1,10 +1,10 @@
 function AnswerItem(props) {
-    console.log("answer:", props.isSelected);
-  
-    return (
-      <div className="my-3" onClick={props.onClick}>
-        <button
-          className={`border w-full rounded-md py-2
+  console.log("answer:", props.isSelected);
+
+  return (
+    <div className="my-3" onClick={props.onClick}>
+      <button
+        className={`border w-full rounded-md py-2
           ${props.isSelected && props.isAnswer ? "bg-green-400" : ""}
           ${props.isSelected && props.isWrong ? "bg-red-500" : ""}
           ${
@@ -18,12 +18,11 @@ function AnswerItem(props) {
               : ""
           }
           `}
-        >
-          {props.text}
-        </button>
-      </div>
-    );
-  }
-  
-  export default AnswerItem;
-  
+      >
+        {props.text}
+      </button>
+    </div>
+  );
+}
+
+export default AnswerItem;

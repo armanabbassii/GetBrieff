@@ -1,15 +1,14 @@
 import { useContext, useState } from "react";
-import AnswerItem from "./AnswerItem.jsx";
-import { playwrightQ } from "../constants/playwrightQ&A";
+import AnswerItem from "./AnswerItem";
+import { playwrightQ } from "../constants/playwright";
 import AnswerBox from "./AnswerBox";
 import QuizContext from "../context/QuizContext";
 
 function QuestionBox() {
-
   const [counter, setCounter] = useState(0);
   const { correctPercentage, correctAnswers, wrongAnswers } =
     useContext(QuizContext);
-// related to last page
+
   if (counter === 19) {
     return (
       <div className="w-full border px-8 py-6 h-screen rounded-xl ">
@@ -19,13 +18,13 @@ function QuestionBox() {
     );
   }
   return (
-    <div className="w-full border px-7 py-6 rounded-xl">
+    <div className="w-full border px-8 py-6 rounded-xl">
       <div className="flex flex-col">
         <div className="flex justify-between items-center">
-          <h1 className="font-semibold text-2xl">{playwrightQ[counter].title}</h1>
-          <span className="bg-gray-200 px-3 py-2.5 rounded-md font-semibold text-xs flex items-center space-x-2">
+          <h1 className="font-semibold text-4xl">{playwrightQ[counter].title}</h1>
+          <span className="bg-gray-100 px-3 py-2.5 rounded-md font-semibold text-xs flex items-center space-x-2">
             <span>remaining:</span>
-            <span>{playwrightQ.length - counter}</span> 
+            <span>{playwrightQ.length - counter}</span>
           </span>
         </div>
         <div className="space-x-3 flex my-4 justify-end">
