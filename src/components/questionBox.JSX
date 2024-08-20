@@ -19,39 +19,47 @@ function QuestionBox() {
   }
   return (
     <div className="w-full border px-8 py-6 rounded-xl">
-      <div className="flex flex-col">
+      <div className="flex justify-between items-center mb-4">
+        <span className=" text-green-500 font-semibold">
+          Correct: {correctAnswers}
+        </span>
+        <span className="text-red-500 font-semibold">
+          Incorrect: {wrongAnswers}
+        </span>
+        <span className="text-yellow-400 font-semibold">
+          Remaining: {playwrightQ.length - counter}
+        </span>
+      </div>
+
+      {/* Question Title */}
+      <div className="flex justify-between items-center mb-4">
         <div className="flex justify-between items-center">
-          <h1 className="font-semibold text-4xl">{playwrightQ[counter].title}</h1>
-          <span className="bg-gray-100 px-3 py-2.5 rounded-md font-semibold text-xs flex items-center space-x-2">
-            <span>remaining:</span>
-            <span>{playwrightQ.length - counter}</span>
-          </span>
-        </div>
-        <div className="space-x-3 flex my-4 justify-end">
-          <div className="bg-green-200 rounded-md px-2 text-sm py-1">
-            correct:
-            {correctAnswers}
-          </div>
-          <div className="bg-red-200 rounded-md px-2 text-sm py-1">
-            wrong:
-            {wrongAnswers}
-          </div>
+          <h1 className="font-semibold text-3xl">
+            {playwrightQ[counter].title}
+          </h1>
         </div>
       </div>
+      {/* Answer Options */}
       <AnswerBox
         answers={playwrightQ[counter].possibleAnswers}
         trueAnswerIndex={playwrightQ[counter].trueAnswerIndex}
       />
-      <div className="flex justify-center mt-4"> 
-
-      <button
-        className="border border-black w-full py-2 rounded-md bg-gray-300 text-black"
-        onClick={() => {
-          if (counter < 19) setCounter((counter) => counter + 1);
-        }}
-      >
-        NEXT
-      </button>
+      {/* NEXT Button */}
+      <div className="flex justify-center mt-4">
+        <button
+          className="border border-black w-full py-2 rounded-md bg-gray-300 text-black"
+          onClick={() => {
+            if (counter < 19) setCounter((counter) => counter + 1);
+          }}
+        >
+          Next
+        </button>
+      </div>
+      {/* Explain Button */}
+      <div className="flex justify-center mt-4">
+        <button className="border border-black w-full py-2 rounded-md bg-green-300 text-black">
+          Explain
+        </button>
       </div>
     </div>
   );
