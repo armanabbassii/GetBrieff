@@ -42,13 +42,17 @@ function QuestionBox() {
         answers={playwrightQ[counter].possibleAnswers}
         trueAnswerIndex={playwrightQ[counter].trueAnswerIndex}
       />
+      <div className="flex justify-center mt-4"> 
+
       <button
+        className="border border-black w-full py-2 rounded-md bg-gray-300 text-black"
         onClick={() => {
           if (counter < 19) setCounter((counter) => counter + 1);
         }}
       >
-        next
+        NEXT
       </button>
+      </div>
     </div>
   );
 }
