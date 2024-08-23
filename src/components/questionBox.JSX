@@ -9,11 +9,37 @@ function QuestionBox() {
   const { correctPercentage, correctAnswers, wrongAnswers } =
     useContext(QuizContext);
 
+  {
+    /* Final Results */
+  }
   if (counter === 20) {
     return (
-      <div className="w-full border px-6 py-6 h-screen rounded-xl ">
-        Finishedss
+      <div className="w-full border px-8 py-6 h-screen rounded-xl text-red-500 flex flex-col items-center font-semibold">
         <div>Correct Answers: {correctPercentage.toFixed(2)}%</div>
+        {/* Additional sentence with a link */}
+        <p className="text-black mt-4">
+          Check out the detailed explanation on our
+          <a
+            href="https://www.google.com/"
+            className="text-blue-500 underline ml-1"
+          >
+            results page
+          </a>
+          .
+        </p>
+        <p className="text-black mt-4 text-sm">
+          Success often comes after many trials 🥺
+        </p>
+        <p className="text-black mt-4 text-sm">
+          Don't give up — try the quiz again and continue honing your skills.
+        </p>
+        {/* Reload Button */}
+        <button
+          onClick={() => window.location.reload()}
+          className="mt-6 py-2 w-2/4 bg-blue-500 border rounded-md text-white"
+        >
+          Try Again
+        </button>
       </div>
     );
   }
