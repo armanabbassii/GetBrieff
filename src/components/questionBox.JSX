@@ -14,52 +14,58 @@ function QuestionBox() {
   }
   if (counter === 20) {
     return (
-      <div className="w-full border px-8 py-6 h-screen rounded-xl text-red-500 flex flex-col items-center font-semibold">
-        <div>Correct Answers: {correctPercentage.toFixed(2)}%</div>
-        {/* Additional sentence with a link */}
-        <p className="text-black mt-4">
-          Check out the detailed explanation on our
-          <a
-            href="https://www.google.com/"
-            className="text-blue-500 underline ml-1"
-          >
-            results page
-          </a>
-          .
-        </p>
-        <p className="text-black mt-4 text-sm">
-          Success often comes after many trials 🥺
-        </p>
-        <p className="text-black mt-4 text-sm">
-          Don't give up — try the quiz again and continue honing your skills.
-        </p>
-        {/* Reload Button */}
-        <button
-          onClick={() => window.location.reload()}
-          className="mt-6 py-2 w-2/4 bg-blue-500 border rounded-md text-white"
-        >
-          Try Again
-        </button>
-      </div>
+      <div className="w-full border px-8 py-6 ">
+          <div className="w-full border px-8 py-10 rounded-xl text-red-500 flex flex-col items-center font-semibold">
+            <div>Correct Answers: {correctPercentage.toFixed(2)}%</div>
+            {/* Additional sentence with a link */}
+            <p className="text-black mt-4">
+              Check out the detailed explanation on our
+              <a
+                href="https://www.google.com/"
+                className="text-blue-500 underline ml-1"
+              >
+                results page
+              </a>
+              .
+            </p>
+            <p className="text-black mt-4 text-sm">
+              Success often comes after many trials 🥺
+            </p>
+            <p className="text-black mt-4 text-sm">
+              Don't give up — try the quiz again and continue honing your
+              skills.
+            </p>
+
+            {/* Reload Button */}
+            <button
+              onClick={() => window.location.reload()}
+              className="mt-6 py-2 w-2/4 bg-blue-500 border rounded-md text-white"
+            >
+              Try Again
+            </button>
+          </div>
+        </div>
     );
   }
   return (
-    <div className="w-full border px-8 py-6 rounded-xl">
+    <div className="w-full border px-8 py-5 rounded-xl">
       {/* Question Counter */}
       <div className="flex justify-between items-center mb-4">
-        <span className=" text-green-500 font-semibold">
+        <span className=" text-green-600 text-20">
           Correct: {correctAnswers}
         </span>
-        <span className="text-red-500 font-semibold">
+        <span className="text-red-600 text-20">
           Incorrect: {wrongAnswers}
         </span>
-        <span className="text-yellow-400 font-semibold">
+        <span className="text-yellow-500 text-20">
           Remaining: {playwrightQ.length - counter}
         </span>
       </div>
 
       {/* Question Title */}
-      <div className="flex justify-between items-center mb-4">
+      <div className="w-full border px-8 py-4 ">
+
+      <div className="flex justify-between items-center mb-6">
         <div className="flex justify-between items-center">
           <h1 className="font-semibold text-3xl">
             {playwrightQ[counter].title}
@@ -71,6 +77,7 @@ function QuestionBox() {
         answers={playwrightQ[counter].possibleAnswers}
         trueAnswerIndex={playwrightQ[counter].trueAnswerIndex}
       />
+      </div>
       {/* NEXT Button */}
       <div className="flex justify-center mt-4">
         <button
