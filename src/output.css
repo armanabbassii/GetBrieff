@@ -593,12 +593,12 @@ video {
   display: flex;
 }
 
-.w-full {
-  width: 100%;
-}
-
 .w-2\/4 {
   width: 50%;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .max-w-2xl {

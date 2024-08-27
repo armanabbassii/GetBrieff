@@ -40,3 +40,16 @@
 .read-the-docs {
   color: #888;
 }
+
+/* In App.css or index.css */
+.next {
+  background-color: #fef08a; /* Tailwind's bg-yellow-200 equivalent */
+  color: #000;
+  margin-top: 1rem;
+}
+
+.explain-button {
+  background-color: #bfdbfe; /* Tailwind's bg-blue-200 equivalent */
+  color: #000;
+  margin-top: 1rem;
+}
