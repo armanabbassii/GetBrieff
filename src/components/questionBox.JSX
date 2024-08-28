@@ -11,6 +11,16 @@ function QuestionBox() {
   const { correctPercentage, correctAnswers, wrongAnswers } =
     useContext(QuizContext);
 
+  const [show,setShow] = useState(false);
+  const onShowClick = ()=>{
+    if (show == false){
+      setShow(true);
+    } else setShow(false)
+  }
+
+
+
+
   {
     /* Final Results */
   }
@@ -89,7 +99,9 @@ function QuestionBox() {
       <Button 
           label="Explain"
           className="explain-button text-black mt-4"
+          onClick={onShowClick}
       />
+      {show && <h1 className="next-button">thanks</h1>}
     </div>
   );
 }
