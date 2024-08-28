@@ -7,7 +7,15 @@
   }
   
   .explain-button {
-    background-color: #5d6876; /* Tailwind's bg-blue-200 equivalent */
+    background-color: #96bff6; /* Tailwind's bg-blue-200 equivalent */
     color: #000;
     margin-top: 1rem;
+  }
+  
+  .explain-details {
+    margin-top: 1rem; /* Adds space between the Explain button and details */
+    background-color: #f8f8f8; /* Light background for the details section */
+    padding: 1rem; /* Adds padding inside the details section */
+    border-radius: 0.5rem; /* Rounds the corners of the details section */
+    font-size: 0.875rem;
   }

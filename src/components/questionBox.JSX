@@ -11,15 +11,12 @@ function QuestionBox() {
   const { correctPercentage, correctAnswers, wrongAnswers } =
     useContext(QuizContext);
 
-  const [show,setShow] = useState(false);
-  const onShowClick = ()=>{
-    if (show == false){
+  const [show, setShow] = useState(false);
+  const onShowClick = () => {
+    if (show == false) {
       setShow(true);
-    } else setShow(false)
-  }
-
-
-
+    } else setShow(false);
+  };
 
   {
     /* Final Results */
@@ -96,12 +93,16 @@ function QuestionBox() {
       />
 
       {/* Explain Button */}
-      <Button 
-          label="Explain"
-          className="explain-button text-black mt-4"
-          onClick={onShowClick}
+      <Button
+        label="Explain"
+        className="explain-button text-black mt-4"
+        onClick={onShowClick}
       />
-      {show && <h1 className="next-button">thanks</h1>}
+      {show && (
+        <h1 className="explain-details border px-6 py-4 rounded-xl">
+          {playwrightQ[counter].description}
+        </h1>
+      )}
     </div>
   );
 }
