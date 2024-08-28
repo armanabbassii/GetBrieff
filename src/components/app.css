@@ -1,0 +1,13 @@
+
+/* In App.css or index.css */
+.next-button {
+    background-color: #fef08a; /* Tailwind's bg-yellow-200 equivalent */
+    color: #000;
+    margin-top: 1rem;
+  }
+  
+  .explain-button {
+    background-color: #5d6876; /* Tailwind's bg-blue-200 equivalent */
+    color: #000;
+    margin-top: 1rem;
+  }

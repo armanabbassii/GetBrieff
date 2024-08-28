@@ -4,6 +4,7 @@ import { playwrightQ } from "../constants/playwright";
 import AnswerBox from "./AnswerBox";
 import QuizContext from "../context/QuizContext";
 import Button from "./button";
+import "./app.css";
 
 function QuestionBox() {
   const [counter, setCounter] = useState(0);
@@ -81,13 +82,13 @@ function QuestionBox() {
         onClick={() => {
           if (counter < 20) setCounter(counter + 1);
         }}
-        className={`bg-yellow-200 text-black flex justify-center mt-4`}
+        className={`next-button text-black flex justify-center mt-4`}
       />
 
       {/* Explain Button */}
       <Button 
           label="Explain"
-          className="bg-blue-200 text-black mt-4"
+          className="explain-button text-black mt-4"
       />
     </div>
   );
