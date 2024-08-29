@@ -1,10 +1,10 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import AnswerItem from "./AnswerItem";
 import { playwrightQ } from "../constants/playwright";
 import AnswerBox from "./AnswerBox";
 import QuizContext from "../context/QuizContext";
 import Button from "./button";
-import "./app.css";
+import ShowHide from "./showHide";
 
 function QuestionBox() {
   const [counter, setCounter] = useState(0);
@@ -12,11 +12,17 @@ function QuestionBox() {
     useContext(QuizContext);
 
   const [show, setShow] = useState(false);
+
   const onShowClick = () => {
     if (show == false) {
       setShow(true);
     } else setShow(false);
   };
+
+  useEffect(() => {
+
+    setShow(false)
+  }, [counter])
 
   {
     /* Final Results */
@@ -85,24 +91,24 @@ function QuestionBox() {
       </div>
       {/* NEXT Button */}
       <Button
+        color="yellow"
         label="Next"
         onClick={() => {
           if (counter < 20) setCounter(counter + 1);
         }}
-        className={`next-button text-black flex justify-center mt-4`}
       />
 
-      {/* Explain Button */}
-      <Button
-        label="Explain"
-        className="explain-button text-black mt-4"
-        onClick={onShowClick}
+      {/* Explanation Section */}
+      <ShowHide
+        counter={counter} 
+        description={playwrightQ[counter].description}
       />
-      {show && (
-        <h1 className="explain-details border px-6 py-4 rounded-xl">
+
+      {/* {show && (
+        <h1 className="explain-details border px-6 py-4 rounded-xl mt-4">
           {playwrightQ[counter].description}
         </h1>
-      )}
+      )} */}
     </div>
   );
 }

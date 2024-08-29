@@ -1,3 +1,63 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  .logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+  .logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+  }
+  
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+      animation: logo-spin infinite 20s linear;
+    }
+  }
+  
+  .card {
+    padding: 2em;
+  }
+  
+  .read-the-docs {
+    color: #888;
+  }
+  
+  /* In App.css or index.css */
+ 
+  
+  .explain-button {
+    background-color: #bfdbfe; /* Tailwind's bg-blue-200 equivalent */
+    color: #000;
+    margin-top: 1rem;
+  }
+
+  .explain-details {
+    margin-top: 1rem; /* Adds space between the Explain button and details */
+    background-color: #f8f8f8; /* Light background for the details section */
+    padding: 1rem; /* Adds padding inside the details section */
+    border-radius: 0.5rem; /* Rounds the corners of the details section */
+    font-size: 0.875rem;
+  }
