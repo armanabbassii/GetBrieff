@@ -589,8 +589,16 @@ video {
   margin-top: 1.5rem;
 }
 
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
 .flex {
   display: flex;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .w-2\/4 {
@@ -668,14 +676,9 @@ video {
   background-color: rgb(250 204 21 / var(--tw-bg-opacity));
 }
 
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
 .px-8 {
@@ -708,6 +711,16 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -718,8 +731,17 @@ video {
   line-height: 1.25rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .font-semibold {
   font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .text-black {
@@ -821,9 +843,25 @@ video {
   /* Adds space between the Explain button and details */
   background-color: #f8f8f8;
   /* Light background for the details section */
-  padding: 1rem;
-  /* Adds padding inside the details section */
+  padding-left: 1.5rem;
+  /* Equivalent to px-6 */
+  padding-right: 1.5rem;
+  /* Equivalent to px-6 */
+  padding-top: 1rem;
+  /* Equivalent to py-4 */
+  padding-bottom: 1rem;
+  /* Equivalent to py-4 */
+  border: 1px solid #d1d5db;
+  /* Equivalent to border */
   border-radius: 0.5rem;
   /* Rounds the corners of the details section */
   font-size: 0.875rem;
+  /* Adjusts font size */
+  text-align: left;
+  /* Aligns text to the left */
+}
+
+.hover\:bg-blue-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
 }

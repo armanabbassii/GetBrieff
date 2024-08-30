@@ -53,11 +53,16 @@
     color: #000;
     margin-top: 1rem;
   }
-
+  
   .explain-details {
     margin-top: 1rem; /* Adds space between the Explain button and details */
     background-color: #f8f8f8; /* Light background for the details section */
-    padding: 1rem; /* Adds padding inside the details section */
+    padding-left: 1.5rem; /* Equivalent to px-6 */
+    padding-right: 1.5rem; /* Equivalent to px-6 */
+    padding-top: 1rem; /* Equivalent to py-4 */
+    padding-bottom: 1rem; /* Equivalent to py-4 */
+    border: 1px solid #d1d5db; /* Equivalent to border */
     border-radius: 0.5rem; /* Rounds the corners of the details section */
-    font-size: 0.875rem;
+    font-size: 0.875rem; /* Adjusts font size */
+    text-align: left; /* Aligns text to the left */
   }
