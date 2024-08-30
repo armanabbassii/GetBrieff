@@ -11,19 +11,6 @@ function QuestionBox() {
   const { correctPercentage, correctAnswers, wrongAnswers } =
     useContext(QuizContext);
 
-  const [show, setShow] = useState(false);
-
-  const onShowClick = () => {
-    if (show == false) {
-      setShow(true);
-    } else setShow(false);
-  };
-
-  useEffect(() => {
-
-    setShow(false)
-  }, [counter])
-
   {
     /* Final Results */
   }
@@ -97,18 +84,11 @@ function QuestionBox() {
           if (counter < 20) setCounter(counter + 1);
         }}
       />
-
       {/* Explanation Section */}
       <ShowHide
         counter={counter} 
         description={playwrightQ[counter].description}
       />
-
-      {/* {show && (
-        <h1 className="explain-details border px-6 py-4 rounded-xl mt-4">
-          {playwrightQ[counter].description}
-        </h1>
-      )} */}
     </div>
   );
 }

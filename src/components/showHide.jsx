@@ -1,6 +1,8 @@
 // src/components/ShowHide.jsx
 
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { useState, useEffect } from "react";
+import Button from "./button";
 
 function ShowHide({ counter, description }) {
   const [show, setShow] = useState(false);
@@ -9,23 +11,32 @@ function ShowHide({ counter, description }) {
     setShow(false); // Reset show on counter change
   }, [counter]);
 
+  
   const onShowClick = () => {
-    setShow((prevShow) => !prevShow);
-  };
+      setShow((prevShow) => !prevShow);
+    };
+    
+    {/* easier to understand onShowClick function*/ }
+    //   const onShowClick = () => {
+    //     if (show == false) {
+    //       setShow(true);
+    //     } else {
+    //       setShow(false);
+    //     }
+    //   };
 
   return (
     <div>
       {/* Explain Button */}
-      <button
+      <Button
+        color= "blue"
+        label="Explain"
+        className="text-black mt-4"
         onClick={onShowClick}
-        className="explain-button bg-blue-200 text-black mt-4 py-2 px-4 rounded-md"
-      >
-        {show ? "Hide Explanation" : "Show Explanation"}
-      </button>
-
+      />
       {/* Explanation details */}
       {show && (
-        <h1 className="explain-details border px-6 py-4 rounded-xl mt-4 text-sm">
+        <h1 className="explain-details">
           {description}
         </h1>
       )}
