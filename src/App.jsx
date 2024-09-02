@@ -1,6 +1,6 @@
-import { BrowserRouter as Router,Route, Routes } from "react-router-dom";
 import QuestionBox from "./components/QuestionBox";
 import { QuizProvider } from "./context/QuizContext";
+import { BrowserRouter as Router,Route, Routes } from "react-router-dom";
 import HomePage from "./components/HomePage";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
 
             {/* Route for Quiz Page */}
-            <Route path="/quiz" element={<QuestionBox />} />
+            <Route path="/PlaywrightQuiz" element={<QuestionBox />} />
           </Routes>
         </div>
       </Router>
