@@ -9,6 +9,8 @@
    - `npm install --save-dev @babel/preset-react`
    - `npm install concurrently --save-dev`
    - `npm install react-router-dom`
+   - `npm install @heroicons/react`
+   - `npm install @headlessui/react@latest`
 
 2. Run project in development server
    - `npm run dev`
