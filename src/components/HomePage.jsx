@@ -14,6 +14,14 @@ function HomePage() {
         >
           Start Quiz
         </Link>
+        <p className=" mt-2 py-4 px-8"> 
+        <Link
+          to="/BriefPage"
+          className="bg-red-500 text-white py-2 px-4 rounded-md"
+        >
+          Brief Conf
+        </Link>
+        </p>
       </div>
     );
   }
