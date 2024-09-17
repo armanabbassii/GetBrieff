@@ -1,4 +1,5 @@
-export const playwrightQ = [{
+export const playwrightQ = [
+  {
     title: "Locating Elements???",
     possibleAnswers: [
       "By using `findElement()`",

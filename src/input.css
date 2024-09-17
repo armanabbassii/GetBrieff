@@ -66,3 +66,18 @@
     font-size: 0.875rem; /* Adjusts font size */
     text-align: left; /* Aligns text to the left */
   }
+
+  .hero-section {
+    height: 300px; /* Adjust the height as needed */
+    width: 100%; /* Full width */
+    background-color: blue; /* Replace with your desired color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .faq-section {
+    height: 500px; /* Adjust the height as needed */
+    width: 100%; /* Full width */
+    background-color: white;
+  }
