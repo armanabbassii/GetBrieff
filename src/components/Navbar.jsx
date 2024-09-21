@@ -14,7 +14,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-slate-100 fixed top-0 left-0 w-full z-20 font-semibold">
+    <nav className="bg-slate-100 fixed top-0 left-0 w-full z-20 font-semibold mb-0">
       <div className="flex justify-center py-2">
         <ul className="flex space-x-10">
           {/* Dropdown item */}

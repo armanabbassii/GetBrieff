@@ -68,10 +68,8 @@
   }
 
   .hero-section {
-    height: 300px; /* Adjust the height as needed */
-    width: 100%; /* Full width */
-    background-color: blue; /* Replace with your desired color */
-    display: flex;
+    height: 100%; /* Adjust the height as needed */
+    background-color: rgb(223, 219, 219); /* Replace with your desired color */
     justify-content: center;
     align-items: center;
   }

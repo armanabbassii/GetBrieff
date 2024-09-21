@@ -16,7 +16,7 @@ function QuestionBox() {
   }
   if (counter === 20) {
     return (
-      <div className="w-full border px-8 py-6 ">
+      <div className="w-full border px-8 py-6 my-20 max-w-2xl items-center justify-center mx-auto">
         <div className="w-full border px-8 py-10 rounded-xl text-red-500 flex flex-col items-center font-semibold">
           <div>Correct Answers: {correctPercentage.toFixed(2)}%</div>
           {/* Additional sentence with a link */}
@@ -48,8 +48,9 @@ function QuestionBox() {
       </div>
     );
   }
+  
   return (
-    <div className="w-full border px-8 py-5 rounded-xl">
+    <div className="w-full border px-8 py-5 rounded-xl my-20 max-w-2xl items-center justify-center mx-auto">
       {/* Question Counter */}
       <div className="flex justify-between items-center mb-4">
         <span className=" text-green-600 text-20">

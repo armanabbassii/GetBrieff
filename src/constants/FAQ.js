@@ -1,4 +1,4 @@
-export const faqs = [
+export const FAQs = [
     {
       category: "Application & Timeline",
       items: [

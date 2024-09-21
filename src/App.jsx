@@ -3,32 +3,33 @@ import { QuizProvider } from "./context/QuizContext";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import Navbar from "./components/Navbar";
-import HeroSection from "./components/HeroSection";
-import BriefPage from "./components/briefPage";
+import BriefPage from "./components/BriefPage"; // Ensure correct case
 
 function App() {
   return (
     <QuizProvider>
       <Router>
         <Navbar />
-        <div className="flex mx-auto w-full items-center justify-center my-20 max-w-2xl">
-          <Routes>
-            {/* Route for Home Page */}
-            <Route
-              path="/"
-              element={
-                <>
-                  <HomePage />
-                </>
-              }
-            />
+        <Routes>
+          {/* Route for Home Page */}
+          <Route path="/" element={<HomePage />} />
 
-            {/* Route for Quiz Page */}
-            <Route path="/PlaywrightQuiz" element={<QuestionBox />} />
-            <Route path="/BriefPage" element={<BriefPage />} />
-            
-          </Routes>
-        </div>
+          {/* Route for Quiz Page */}
+          <Route
+            path="/PlaywrightQuiz"
+            element={
+              <QuizProvider>
+                <QuestionBox />
+              </QuizProvider>
+            }
+          />
+
+          {/* Route for Brief Page */}
+          <Route path="/BriefPage" element={<BriefPage />} />
+
+          {/* Fallback for undefined routes */}
+          <Route path="*" element={<div>Page not found</div>} />
+        </Routes>
       </Router>
     </QuizProvider>
   );
