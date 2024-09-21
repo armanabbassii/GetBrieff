@@ -9,9 +9,9 @@ import {FAQs} from "../constants/FAQ"
 
 function FAQSection() {
   return (
-    <section className="text-center bg-gray-100 pt-7">
+    <section className="bg-gray-100 pt-7">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-gray-900 mb-10">Frequently Asked Questions</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-10 text-center">Frequently Asked Questions</h2>
 
         {FAQs.map((section, sectionIdx) => (
           <div key={sectionIdx} className="mb-12">
@@ -36,7 +36,7 @@ function FAQSection() {
                           )}
                         </span>
                       </Disclosure.Button>
-                      <Disclosure.Panel className="py-2 text-gray-600">
+                      <Disclosure.Panel className="py-2 text-left text-gray-600">
                         {item.answer}
                       </Disclosure.Panel>
                     </>
