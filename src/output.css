@@ -669,14 +669,6 @@ video {
   max-width: 42rem;
 }
 
-.max-w-7xl {
-  max-width: 80rem;
-}
-
-.max-w-5xl {
-  max-width: 64rem;
-}
-
 .max-w-6xl {
   max-width: 72rem;
 }
@@ -831,10 +823,6 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.pt-5 {
-  padding-top: 1.25rem;
-}
-
 .pt-7 {
   padding-top: 1.75rem;
 }
@@ -849,6 +837,11 @@ video {
 
 .font-mono {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-3xl {
@@ -1048,6 +1041,37 @@ video {
   width: 100%;
   /* Full width */
   background-color: white;
+}
+
+form, input, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 300px;
+}
+
+button[type="submit"] {
+  background-color: #0069ca;
+  border: 1px solid #ccc;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 0;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
 }
 
 .last\:border-none:last-child {

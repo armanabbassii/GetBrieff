@@ -11,6 +11,7 @@
    - `npm install react-router-dom`
    - `npm install @heroicons/react`
    - `npm install @headlessui/react@latest`
+   - `npm i react-google-recaptcha`
 
 2. Run project in development server
    - `npm run dev`
