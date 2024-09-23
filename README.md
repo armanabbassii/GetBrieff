@@ -12,6 +12,7 @@
    - `npm install @heroicons/react`
    - `npm install @headlessui/react@latest`
    - `npm i react-google-recaptcha`
+   - `npm i react-icons`
 
 2. Run project in development server
    - `npm run dev`

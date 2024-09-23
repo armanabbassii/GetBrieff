@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate} from  "react-router-dom"
 import { Link } from "react-router-dom";
-import SubscriptionForm from "./SubscriptionForm";
+import Subscribe from "./EmailBar";
 
 function HeroBrief() {
     return (
@@ -25,15 +25,7 @@ function HeroBrief() {
         </p>
 
       {/* Subscription Section */}
-      <div className="subscription-section py-10 text-center bg-gray-100">
-        <h2 className="text-2xl font-bold mb-5">
-          Subscribe to Our Newsletter
-        </h2>
-        <p className="text-gray-700 mb-5">
-          Stay updated with the latest summaries and insights.
-        </p>
-        <SubscriptionForm /> {/* Embedding the subscription form here */}
-      </div>
+      <Subscribe/>
       </div>
       
     );
