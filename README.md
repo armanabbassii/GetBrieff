@@ -13,6 +13,8 @@
    - `npm install @headlessui/react@latest`
    - `npm i react-google-recaptcha`
    - `npm i react-icons`
+   - `npm i axios`
+   - `npm install express body-parser cors dotenv mailgun-js`
 
 2. Run project in development server
    - `npm run dev`
