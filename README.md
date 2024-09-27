@@ -14,7 +14,10 @@
    - `npm i react-google-recaptcha`
    - `npm i react-icons`
    - `npm i axios`
-   - `npm install express body-parser cors dotenv mailgun-js`
+   - `npm install express body-parser cors dotenv mailgun-js` Subscription System
+   - `npm install nodemailer` //Subscription System
+   - `npm init es6 -y` //Subscription System
+   - `npm i express nodemailer` //Subscription System
 
 2. Run project in development server
    - `npm run dev`
