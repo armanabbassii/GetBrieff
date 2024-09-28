@@ -18,6 +18,7 @@
    - `npm install nodemailer` //Subscription System
    - `npm init es6 -y` //Subscription System
    - `npm i express nodemailer` //Subscription System
+   - `npm i nodemon -D` //nodemon is a tool that helps develop Node.js based applications by automatically restarting the node application when file changes in the directory are detected.
 
 2. Run project in development server
    - `npm run dev`
