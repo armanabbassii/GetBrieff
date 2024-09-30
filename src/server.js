@@ -54,6 +54,8 @@
 //   console.log(`Server running on http://localhost:${port}`);
 // });
 
+import dotenv from 'dotenv';
+dotenv.config();
 
 import ExpressService from './services/ExpressService.js';
 new ExpressService().start();

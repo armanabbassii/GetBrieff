@@ -1,6 +1,6 @@
 import express from 'express';
-import SubscriptionService from './SubscriptionService';
-import EmailService from './EmailServices';
+import SubscriptionService from './SubscriptionService.js'
+import EmailService from './EmailServices.js';
 
 export default class ExpressService {
   static PORT = process.env.PORT;

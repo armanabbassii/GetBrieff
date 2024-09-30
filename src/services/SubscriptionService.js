@@ -1,4 +1,4 @@
-import EmailService from './EmailService.js';
+import EmailService from './EmailServices.js';
 import {randomUUID} from 'crypto';
 
 export default class  SubscriptionService extends EmailService {

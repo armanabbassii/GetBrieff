@@ -1,5 +1,7 @@
 import nodemailer from 'nodemailer'
-import SubscriptionServices from './SubscriptionService.js'
+import SubscriptionService from './SubscriptionService.js'
+import dotenv from 'dotenv';
+dotenv.config();
 
 export default class EmailService {
     static TRANSPORTER  = nodemailer.createTransport({
