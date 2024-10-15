@@ -48,7 +48,7 @@ function QuestionBox() {
       </div>
     );
   }
-  
+
   return (
     <div className="w-full border px-8 py-5 rounded-xl my-20 max-w-2xl items-center justify-center mx-auto">
       {/* Question Counter */}
@@ -87,7 +87,7 @@ function QuestionBox() {
       />
       {/* Explanation Section */}
       <ShowHide
-        counter={counter} 
+        counter={counter}
         description={playwrightQ[counter].description}
       />
     </div>

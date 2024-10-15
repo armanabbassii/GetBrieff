@@ -1,13 +1,10 @@
-import React from 'react';
+import React from "react";
 
-function Button({ label, onClick, className,color }) {
-
-
-
+function Button({ label, onClick, className, color }) {
   const colors = {
-    "yellow":"bg-yellow-400",
-    "blue":"bg-green-400",
-  }
+    yellow: "bg-yellow-400",
+    blue: "bg-green-400",
+  };
 
   return (
     <button
