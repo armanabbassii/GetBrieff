@@ -10,7 +10,7 @@
     "node": ">= 14.0.0",
     "npm": ">= 6.0.0"
   },
-  "homepage": "",
+  "homepage": "https://armanabbassii.github.io/GetBrieff/",
   "repository": {
     "type": "git",
     "url": ""
@@ -26,6 +26,8 @@
   "scripts": {
     "dev": "concurrently \"vite\" \"npx tailwindcss -i ./src/input.css -o ./src/output.css --watch\"",
     "build": "vite build",
+      "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
@@ -43,6 +45,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.2",
-    "concurrently": "^9.0.1"
+    "concurrently": "^9.0.1",
+    "gh-pages": "^6.2.0"
   }
 }
