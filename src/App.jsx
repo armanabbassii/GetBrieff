@@ -12,11 +12,11 @@ function App() {
         <Navbar />
         <Routes>
           {/* Route for Home Page */}
-          <Route path="/" element={<HomePage />} />
+          <Route path="GetBrieff/HomePage" element={<HomePage />} />
 
           {/* Route for Quiz Page */}
           <Route
-            path="/PlaywrightQuiz"
+            path="GetBrieff/PlaywrightQuiz"
             element={
               <QuizProvider>
                 <QuestionBox />
@@ -25,7 +25,7 @@ function App() {
           />
 
           {/* Route for Brief Page */}
-          <Route path="/BriefPage" element={<BriefPage />} />
+          <Route path="GetBrieff/BriefPage" element={<BriefPage />} />
 
           {/* Fallback for undefined routes */}
           <Route path="*" element={<div>Page not found</div>} />
