@@ -28,6 +28,6 @@
 
 ### Objective:
 
-> Brief aims to provide a structured online question-and-answer platform, along with additional tools to measure your own or your team's knowledge.
+> GetBrief aims to provide Brief of every confrerances related to Test
 
 ## Project Definition
