@@ -12,7 +12,7 @@ function App() {
         <Navbar />
         <Routes>
           {/* Route for Home Page */}
-          <Route path="/GetBrieff/" element={<HomePage />} />{" "}
+          <Route path="/GetBrieff/" element={<HomePage />} />
           {/* Route for Quiz Page */}
           <Route
             path="/GetBrieff/PlaywrightQuiz"
