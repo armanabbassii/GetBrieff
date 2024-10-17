@@ -21,7 +21,7 @@
    - `npm i nodemon -D` //nodemon is a tool that helps develop Node.js based applications by automatically restarting the node application when file changes in the directory are detected.
    - `npm i @wittcode/eslint-config` //Subscription System
    - `npm install dotenv` // using for environment variables
-   - `npm install gh-pages --save-dev` //for Deploy a Vite Project to GitHub Pages
+   - `npm install gh-pages --save-dev` // This package helps deploy a Vite project's build output to GitHub Pages
 
 2. Run project in development server
    - `npm run dev`
