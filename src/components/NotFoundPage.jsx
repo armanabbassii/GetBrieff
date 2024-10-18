@@ -8,7 +8,7 @@ const NotFoundPage = () => {
       <p className="mt-4 text-xl text-gray-600">We couldn't find that page</p>
       <p className="mt-2 text-blue-600">
         Try searching or go to
-        <a href="/" className="underline">
+        <a href="/GetBrieff/" className="underline">
           {" "}
           GetBrieff's Home Page
         </a>
