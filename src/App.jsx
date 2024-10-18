@@ -9,6 +9,7 @@ import HomePage from "./components/HomePage";
 import Navbar from "./components/Navbar";
 
 import BriefPage from "./components/BriefPage"; // Ensure correct case
+import NotFoundPage from "./components/NotFoundPage";
 
 function App() {
   return (
@@ -18,11 +19,8 @@ function App() {
 
         <Routes>
           {/* Route for Home Page */}
-
           <Route path="/" element={<HomePage />} />
-
           {/* Route for Quiz Page */}
-
           <Route
             path="/PlaywrightQuiz"
             element={
@@ -31,14 +29,12 @@ function App() {
               </QuizProvider>
             }
           />
-
           {/* Route for Brief Page */}
-
           <Route path="/BriefPage" element={<BriefPage />} />
-
           {/* Fallback for undefined routes */}
-
-          <Route path="*" element={<div>Page not found</div>} />
+          {/* <Route path="*" element={<div>Page not found</div>} /> */}
+          <Route path="*" element={<NotFoundPage />} />
+          {/* Use NotFoundPage here */}
         </Routes>
       </Router>
     </QuizProvider>
