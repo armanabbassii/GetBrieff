@@ -28,7 +28,7 @@ function App() {
           <Route path="/BriefPage" element={<BriefPage />} />
 
           {/* Fallback for undefined routes */}
-          <Route path="*" element={<div>Page not foundd</div>} />
+          <Route path="*" element={<div>Page not founddd</div>} />
         </Routes>
       </Router>
     </QuizProvider>
