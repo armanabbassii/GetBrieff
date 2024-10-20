@@ -1,4 +1,4 @@
-import QuestionBox from "./components/QuestionBox";
+import QuestionBox from "./components/questionBox";
 import { QuizProvider } from "./context/QuizContext";
 import { HashRouter as Router, Route, Routes } from "react-router-dom"; // Use HashRouter
 import HomePage from "./components/HomePage";
