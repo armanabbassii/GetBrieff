@@ -28,6 +28,6 @@
 
 ### Objective:
 
-> GetBrief aims to provide Brief of every confrerances related to Test
+> GetBrief aims to provide Brief of every confrerances related to Testtt
 
 ## Project Definition
