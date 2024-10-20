@@ -1,10 +1,10 @@
 import { useContext, useEffect, useState } from "react";
-import AnswerItem from "./AnswerItem";
-import { playwrightQ } from "../constants/playwright";
-import AnswerBox from "./AnswerBox";
-import QuizContext from "../context/QuizContext";
-import Button from "./button";
-import ShowHide from "./showHide";
+import AnswerItem from "./AnswerItem.jsx";
+import { playwrightQ } from "../constants/playwright.js";
+import AnswerBox from "./answerBox.jsx";
+import QuizContext from "../context/QuizContext.jsx";
+import Button from "./button.jsx";
+import ShowHide from "./showHide.jsx";
 
 function QuestionBox() {
   const [counter, setCounter] = useState(0);
