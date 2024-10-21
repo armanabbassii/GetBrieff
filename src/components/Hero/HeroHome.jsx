@@ -11,12 +11,12 @@ function HeroHome() {
       <p className="text-lg mb-4">
         Test your Playwright knowledge with our fun quiz!
       </p>
-      <Link
+      {/* <Link
         to="/PlaywrightQuiz"
         className="bg-blue-500 text-white py-2 px-4 rounded-md"
       >
         Start Quiz
-      </Link>
+      </Link> */}
       <p className="mt-2 py-4 px-8">
         <Link
           to="/BriefPage"
