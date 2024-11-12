@@ -22,6 +22,7 @@
    - `npm i @wittcode/eslint-config` //Subscription System
    - `npm install dotenv` // using for environment variables
    - `npm install gh-pages --save-dev` // This package helps deploy a Vite project's build output to GitHub Pages
+   - `npm install react-icons --save`
 
 2. Run project in development server
    - `npm run dev`

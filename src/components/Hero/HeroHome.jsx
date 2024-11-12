@@ -3,27 +3,18 @@ import { Link } from "react-router-dom";
 
 function HeroHome() {
   return (
-    <div className="hero-section py-20">
-      <h1 className="text-5xl font-bold mb-5">Welcome to the GetBrief</h1>
-      <p className="text-red-500 font-bold font-mono mb-10">
-        Summary of the 2025 Cypress Conference in 1 minute!
+    <section className="bg-black text-center py-32 text-white">
+      <h1 className="text-5xl font-bold">
+        <span className="text-red-500">GetBrief.</span> Conferences. Articles.
+      </h1>
+
+      <p className="mt-12 text-lg text-lime-400 font-semibold mx-auto leading-relaxed">
+        Get inspired by the work of millions of top-rated designers &<br />
+        agencies around the world.
+        <br />
+        Automatically run them in your continuous integration builds.
       </p>
-      <p className="text-lg mb-4"></p>
-      {/* <Link
-        to="/PlaywrightQuiz"
-        className="bg-blue-500 text-white py-2 px-4 rounded-md"
-      >
-        Start Quiz
-      </Link> */}
-      <p className="mt-2 py-4 px-8">
-        <Link
-          to="/BriefPage"
-          className="bg-red-500 text-white py-2 px-4 rounded-md"
-        >
-          Brief Conf
-        </Link>
-      </p>
-    </div>
+    </section>
   );
 }
 

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 function Navbar() {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -14,31 +14,37 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-slate-100 fixed top-0 left-0 w-full z-20 font-semibold mb-0">
-      <div className="flex justify-center py-2">
-        <ul className="flex space-x-10">
+    <nav className="bg-green-300 fixed top-0 left-0 w-full z-20 font-semibold mb-0">
+      <div className="flex justify-center py-4">
+        <ul className="flex space-x-16">
           {/* Dropdown item */}
           <li
             className="relative"
             onMouseEnter={handleMouseEnter} // Show dropdown on hover
-            // onMouseLeave={handleMouseLeave} // Close dropdown when mouse leaves
+            onMouseLeave={handleMouseLeave} // Hide dropdown when mouse leaves
           >
-            <span className="text-gray-700 cursor-pointer">
+            <span className="text-white cursor-pointer duration-200">
               Conferences
             </span>
             {showDropdown && (
               <ul
-                className="absolute top-full left-0 bg-blue-100 shadow-md rounded-md mt-2 z-30"
+                className="absolute top-full left-0 bg-stone-200 shadow-md mt-2 z-30"
                 onMouseEnter={handleMouseEnter} // Keep dropdown open when hovering over dropdown
                 onMouseLeave={handleMouseLeave} // Close dropdown when mouse leaves the dropdown
               >
                 <li>
-                  <a href="#" className="text-gray-700 block px-4 py-2 hover:bg-gray-200">
+                  <a
+                    href="#"
+                    className="text-gray-700 block px-4 py-2 hover:bg-gray-200"
+                  >
                     Cypress
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-700 block px-4 py-2 hover:bg-gray-200">
+                  <a
+                    href="#"
+                    className="text-gray-700 block px-4 py-2 hover:bg-gray-200"
+                  >
                     Playwright
                   </a>
                 </li>
@@ -47,9 +53,16 @@ function Navbar() {
           </li>
 
           {/* Other navbar items */}
-          <li><a href="#" className="text-gray-700">Try Yourself</a></li>
-          <li><a href="#" className="text-gray-700">Register</a></li>
-          <li><a href="#" className="text-gray-700">Contribute</a></li>
+          <li>
+            <a href="#" className="text-white">
+              Articles
+            </a>
+          </li>
+          <li>
+            <a href="#" className="text-white">
+              About
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
