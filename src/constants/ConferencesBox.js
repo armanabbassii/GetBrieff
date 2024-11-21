@@ -1,5 +1,5 @@
   // Array of conference data
-  export const conferences = [
+  export const conferencesBox = [
     {
       title: "CYPRESS Conf 2024",
       description: [
@@ -22,4 +22,3 @@
       ],
     },
   ];
-  
