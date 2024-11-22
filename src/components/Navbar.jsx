@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import { logo } from "..//assets//log";
+import Logo from "../assets/Logo.png";
+
 function Navbar() {
   const [showDropdown, setShowDropdown] = useState(false);
 
@@ -19,9 +20,9 @@ function Navbar() {
       <div className="flex justify-center py-4">
         {/* Logo item */}
         <div className="flex items-center">
-          <img src={logo} alt="logo" className="w-10 h-auto"></img>
+          <img src={Logo} alt="logo" className="w-12 h-auto space-x-16 "></img>
         </div>
-        <ul className="flex space-x-16">
+        <ul className="flex space-x-16 ml-12">
           {/* Dropdown item */}
           <li
             className="relative"
