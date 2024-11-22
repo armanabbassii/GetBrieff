@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-function HeroHome() {
+function Articles() {
   return (
     <section className="bg-black text-center mt-5 py-32 text-white">
       <h1 className="text-5xl font-bold">
@@ -18,4 +17,4 @@ function HeroHome() {
   );
 }
 
-export default HeroHome;
+export default Articles;

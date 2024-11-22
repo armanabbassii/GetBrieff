@@ -14,7 +14,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-green-300 fixed top-0 left-0 w-full z-20 font-semibold mb-0">
+    <nav className="bg-gray-100/70 backdrop-blur-md fixed top-0 left-0 w-full z-20 font-semibold shadow-md">
       <div className="flex justify-center py-4">
         <ul className="flex space-x-16">
           {/* Dropdown item */}
@@ -23,7 +23,7 @@ function Navbar() {
             onMouseEnter={handleMouseEnter} // Show dropdown on hover
             onMouseLeave={handleMouseLeave} // Hide dropdown when mouse leaves
           >
-            <span className="text-white cursor-pointer duration-200">
+            <span className="text-black cursor-pointer duration-200">
               Conferences
             </span>
             {showDropdown && (
@@ -54,12 +54,12 @@ function Navbar() {
 
           {/* Other navbar items */}
           <li>
-            <a href="#" className="text-white">
+            <a href="#" className="text-black">
               Articles
             </a>
           </li>
           <li>
-            <a href="#" className="text-white">
+            <a href="#" className="text-black">
               About
             </a>
           </li>
