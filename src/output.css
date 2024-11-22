@@ -743,6 +743,10 @@ video {
   height: 18rem;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }

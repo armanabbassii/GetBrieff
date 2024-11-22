@@ -1,5 +1,6 @@
+import React from "react";
 import { useState } from "react";
-
+import { logo } from "..//assets//log";
 function Navbar() {
   const [showDropdown, setShowDropdown] = useState(false);
 
@@ -16,6 +17,10 @@ function Navbar() {
   return (
     <nav className="bg-gray-100/70 backdrop-blur-md fixed top-0 left-0 w-full z-20 font-semibold shadow-md">
       <div className="flex justify-center py-4">
+        {/* Logo item */}
+        <div className="flex items-center">
+          <img src={logo} alt="logo" className="w-10 h-auto"></img>
+        </div>
         <ul className="flex space-x-16">
           {/* Dropdown item */}
           <li
@@ -58,11 +63,11 @@ function Navbar() {
               Articles
             </a>
           </li>
-          <li>
+          {/* <li>
             <a href="#" className="text-black">
               About
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
     </nav>
