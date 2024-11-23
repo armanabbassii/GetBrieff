@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function ConferencesBox({ conference }) {
   return (
-    <div className="relative bg-white border border-gray-300 p-12 max-w-4xl w-full h-72 shadow-lg">
+    <div className="relative bg-white border border-gray-300 p-6 max-w-4xl w-full h-72 shadow-lg">
       <h3 className="text-2xl font-bold text-red-700 mt-2">
         {conference.title}
       </h3>

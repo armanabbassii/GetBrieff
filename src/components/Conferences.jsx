@@ -17,7 +17,7 @@ function Conferences() {
     );
   };
   return (
-    <div className="bg-[#F0FCF8] text-center py-10 relative">
+    <div className="bg-[#F0FCF8] text-center py-10 relative border border-gray-500 mt-1">
       {/* Title Section */}
       <div className="text-center">
         <h1 className="text-4xl font-bold text-black">
